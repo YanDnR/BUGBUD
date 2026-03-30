@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #f0ede8; }
+      :root {
+        --color-background-primary: #ffffff;
+        --color-background-secondary: #f5f4f0;
+        --color-text-primary: #111110;
+        --color-text-secondary: #888780;
+        --color-border-tertiary: rgba(0,0,0,0.1);
+        --color-border-secondary: rgba(0,0,0,0.2);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-background-primary: #1c1c1a;
+          --color-background-secondary: #2a2a28;
+          --color-text-primary: #f0ede8;
+          --color-text-secondary: #888780;
+          --color-border-tertiary: rgba(255,255,255,0.1);
+          --color-border-secondary: rgba(255,255,255,0.2);
+        }
+        body { background: #111110; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
